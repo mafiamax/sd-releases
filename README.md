@@ -11,14 +11,14 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 ## 📦 Kurulum ve Dağıtım (v2.5)
 
 - **🚀 Kurulum Sihirbazı (`SDTools_Setup.exe` - Önerilen):**
-  Tek dosyalık **`SDTools_Setup.exe`** (~392 KB) kurulum paketini çalıştırarak yazılımı bilgisayarınıza (`%LocalAppData%\Programs\SDTools` veya `C:\Program Files\SDTools` altına) kurabilirsiniz. Kurulum sihirbazı:
+  Tek dosyalık **`SDTools_Setup.exe`** (~402 KB) kurulum paketini çalıştırarak yazılımı bilgisayarınıza (`%LocalAppData%\Programs\SDTools` veya `C:\Program Files\SDTools` altına) kurabilirsiniz. Kurulum sihirbazı:
   - Masaüstü ve Başlat Menüsü kısayollarını otomatik oluşturur,
-  - `config.json` ayar dosyasını kurulum klasörü içinde tutar (**Masaüstünde asla `config.json` görünmez**),
-  - Windows *Program Ekle veya Kaldır* listesine kaldırıcı (Uninstaller) kaydı ekler.
-- **🔄 GitHub Üzerinden Online Güncelleme (Auto-Update):**
-  Uygulama açılışında veya üst çubuktaki **`🔄 Güncelle`** butonuna tıklandığında GitHub (`version.json`) üzerinden yeni sürüm kontrolü yapılır. Yeni bir sürüm yayınlandığında tek tıkla indirilir ve program kendi kendini otomatik olarak günceller.
+  - `config.json` ayar dosyasını kurulum klasörü içinde atomik olarak tutar (**Masaüstünde asla `config.json` görünmez**),
+  - Windows *Program Ekle veya Kaldır* listesine güvenli kaldırıcı (Uninstaller) kaydı ekler.
+- **🔄 GitHub Üzerinden SHA-256 Doğrulamalı Online Güncelleme (Auto-Update):**
+  Uygulama açılışında veya **Hakkında -> `🔄 Güncelleme Kontrolü`** butonuna tıklandığında GitHub (`version.json`) üzerinden yeni sürüm kontrolü yapılır. Yeni bir sürüm yayınlandığında SHA-256 bütünlük doğrulamasıyla indirilir ve yerleşik `--apply-update` mekanizmasıyla kendi kendini güvenle günceller.
 - **⚡ Taşınabilir (Portable) Tek `.exe` Kullanımı:**
-  Kurulum yapmadan doğrudan **`SDTools.exe`** (~295 KB) dosyasını da çalıştırabilirsiniz. Doğrudan Masaüstü'nden çalıştırılsa bile ayar dosyasını otomatik olarak `%LocalAppData%\Programs\SDTools\config.json` altında saklar.
+  Kurulum yapmadan doğrudan **`SDTools.exe`** (~303 KB) dosyasını da çalıştırabilirsiniz. Doğrudan Masaüstü'nden çalıştırılsa bile ayar dosyasını otomatik olarak `%LocalAppData%\Programs\SDTools\config.json` altında saklar.
 
 ---
 

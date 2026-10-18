@@ -1,9 +1,10 @@
 {
   "version": "2.5.0",
   "display_version": "v2.5",
-  "release_date": "17 Ekim 2026",
+  "release_date": "18 Ekim 2026",
   "download_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools.exe",
   "setup_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools_Setup.exe",
+  "sha256": "d3f35b7a01b67012339613d78ca38544303e693404cda924d309fac7cd7ff5e0",
   "changelog_url": "https://github.com/mafiamax/sd-releases/blob/main/CHANGELOG.md",
-  "notes": "• Kurulum Sihirbazı (SDTools_Setup.exe) eklendi.\n• GitHub üzerinden tek tıkla Online Güncelleme (Auto-Update) eklendi.\n• Masaüstünde config.json görünmemesi için akıllı klasör yönetimi eklendi."
+  "notes": "• Kurulum Sihirbazı (SDTools_Setup.exe) eklendi.\n• GitHub üzerinden SHA-256 doğrulamalı Online Güncelleme (Auto-Update) eklendi.\n• Masaüstünde config.json görünmemesi için akıllı klasör yönetimi eklendi."
 }
