@@ -1,4 +1,4 @@
-# 🏗️ SD Proje Araçları (SD Tools) v2.5
+# 🏗️ SD Proje Araçları (SD Tools) v2.6
 
 Statik Dizayn Mühendislik için özel olarak geliştirilmiş **SD Proje Araçları (SD Tools)**; ETABS, SAP2000, SAFE, ideCAD ve STA4CAD gibi yapısal analiz yazılımları ile mimari/CAD projelerinin bakımını, temizliğini ve yedeklenmesini tek merkezden yöneten **hepsi-bir-arada (All-in-One)** mühendislik çalışma süitidir.
 
@@ -8,7 +8,7 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ---
 
-## 📦 Kurulum ve Dağıtım (v2.5)
+## 📦 Kurulum ve Dağıtım (v2.6)
 
 - **🚀 Kurulum Sihirbazı (`SDTools_Setup.exe` - Önerilen):**
   Tek dosyalık **`SDTools_Setup.exe`** (~402 KB) kurulum paketini çalıştırarak yazılımı bilgisayarınıza (`%LocalAppData%\Programs\SDTools` veya `C:\Program Files\SDTools` altına) kurabilirsiniz. Kurulum sihirbazı:
@@ -74,7 +74,7 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ---
 
-## 🛡️ Korunan Dosya Uzantıları ve Kategoriler (v2.5)
+## 🛡️ Korunan Dosya Uzantıları ve Kategoriler (v2.6)
 
 | Kategori | Uzantılar | Varsayılan Durum |
 | :--- | :--- | :--- |
@@ -102,4 +102,4 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ---
 
-*Geliştirici: Statik Dizayn Mühendislik • Web: https://statikdizayn.com • Sürüm: v2.5 • Powered by Google Gemini*
+*Geliştirici: Statik Dizayn Mühendislik • Web: https://statikdizayn.com • Sürüm: v2.6 • Powered by Google Gemini*

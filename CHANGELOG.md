@@ -4,22 +4,32 @@ Bu sayfada **SD Proje Araçları (SD Tools)** yazılımının sürümlerinde yap
 
 ---
 
-## 🚀 Sürüm 2.5 (18 Ekim 2026) - *Güncel Sürüm*
+## 🛡️ Sürüm 2.6 (18 Ekim 2026) - *Güncel Sürüm*
 
-- **📦 Kurulum Sihirbazı (`SDTools_Setup.exe`) ve Güvenli Kaldırıcı:**
-  - İçinde `SDTools.exe` ve `app.ico` gömülü olan, internet gerektirmeyen tek dosyalık modern **WPF Kurulum Sihirbazı (`SDTools_Setup.exe`)** eklendi.
-  - Varsayılan olarak `%LocalAppData%\Programs\SDTools` klasörüne (veya isteğe bağlı olarak `C:\Program Files\SDTools` ya da özel bir klasöre) kurulum yapar; dolu kullanıcı klasörlerine doğrudan kurulum yapılmasını engelleyerek otomatik `\SDTools` alt dizini koruması uygular.
-  - Yönetici yetkisiyle yapılan kurulumlar sonrasında uygulamayı normal kullanıcı yetkisiyle (`explorer.exe` üzerinden) başlatarak Google Drive (`G:\`) ve ağ sürücülerinin görünürlüğünü korur.
-  - Masaüstü kısayolu, Başlat Menüsü kısayolu ve Windows *Program Ekle / Kaldır (Uninstall)* kaydını otomatik oluşturur; kaldırma sırasında yalnızca kendi kurulum dosyalarını siler ve klasör boşsa temizler.
-- **🔄 GitHub Üzerinden SHA-256 Doğrulamalı Online Güncelleme (`--apply-update`):**
-  - Uygulama açılışında arka planda sessizce (aktif tarama/yedekleme yokken) ve **Hakkında -> `🔄 Güncelleme Kontrolü`** butonuyla GitHub (`version.json`) üzerinden yeni sürüm kontrolü yapar.
+- **🔄 SHA-256 Doğrulamalı Online Güncelleme (`--apply-update`):**
   - İndirme adresini yalnızca resmi dağıtım deposuna (`mafiamax/sd-releases`) kilitler, indirilen paketin **SHA-256 kriptografik özetini** ve PE (`MZ`) başlığını doğrular.
   - Harici `.bat` betiği yerine yerleşik `--apply-update` mekanizmasıyla çalışan süreci bekler, mevcut `.exe` dosyasını `.old` olarak yedekler, hata durumunda otomatik geri yükler (rollback) ve yeni sürüm açıldığında Windows *Program Ekle / Kaldır* sürüm bilgisini günceller.
+- **📦 Kurulum Sihirbazı ve Güvenli Kaldırıcı İyileştirmeleri (`SDTools_Setup.exe`):**
+  - Dolu kullanıcı klasörlerine doğrudan kurulum yapılmasını engelleyerek otomatik `\SDTools` alt dizini koruması uygular.
+  - Yönetici yetkisiyle yapılan kurulumlar sonrasında uygulamayı normal kullanıcı yetkisiyle (`explorer.exe` üzerinden) başlatarak Google Drive (`G:\`) ve ağ sürücülerinin görünürlüğünü korur.
+  - Kaldırma sırasında yalnızca kendi kurulum dosyalarını siler ve klasör yalnızca tamamen boşsa temizler.
 - **🛡️ Ekstra Temizleme, Yedekleme ve `config.json` Güvenliği:**
   - Çalıştırılabilir sistem ve uygulama dosyaları (`.exe, .dll, .sys, .msi, .bat, .cmd, .ps1, .lnk, .cs, .py, .json, .config, .ico`) her koşulda silinmeye karşı koruma altına alındı (`NeverDeleteExtensions`).
   - Temizlik onay penceresine **"En Çok Silinecek İlk 5 Uzantı ve Adetleri"** özeti eklendi; silme anında dosyanın tarama sonrasındaki boyut ve değiştirilme tarihi tekrar kontrol edilir.
   - Gelecekteki tüm **ideCAD** sürümleri (`.ide12`, `.ide15` vb.) `.ide*` önek eşleşmesiyle otomatik olarak desteklenir.
-  - `config.json` yazma işlemleri `.tmp` + `File.Replace` ile atomik hale getirildi ve Masaüstünde hiçbir JSON dosyasının görünmemesi sağlandı.
+  - `config.json` yazma işlemleri `.tmp` + `File.Replace` ile atomik hale getirildi.
+
+---
+
+## 🚀 Sürüm 2.5 (17 Ekim 2026)
+
+- **📦 Kurulum Sihirbazı (`SDTools_Setup.exe`):**
+  - İçinde `SDTools.exe` ve `app.ico` gömülü olan, internet gerektirmeyen tek dosyalık modern **WPF Kurulum Sihirbazı (`SDTools_Setup.exe`)** eklendi.
+  - Masaüstü kısayolu, Başlat Menüsü kısayolu ve Windows *Program Ekle / Kaldır (Uninstall)* kaydını otomatik oluşturur.
+- **🔄 GitHub Üzerinden Online Güncelleme (Auto-Update):**
+  - Uygulama açılışında arka planda sessizce ve *Hakkında -> Güncelleme Kontrolü* butonuyla GitHub (`version.json`) üzerinden yeni sürüm kontrolü yapar.
+- **🛡️ Masaüstünde Gizli / Akıllı `config.json` Yönetimi:**
+  - Yazılım kurulum klasöründen çalıştığında `config.json` dosyasını kendi kurulum klasöründe tutar; böylece Masaüstünde sadece kısayol yer alır ve hiçbir JSON dosyası görünmez.
 
 ---
 
