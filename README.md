@@ -1,6 +1,6 @@
-# 🏗️ SD Proje Araçları (SD Tools) v2.6
+# 🏗️ SD Proje Araçları (SD Tools) v2.6.1
 
-Statik Dizayn Mühendislik için özel olarak geliştirilmiş **SD Proje Araçları (SD Tools)**; ETABS, SAP2000, SAFE, ideCAD ve STA4CAD gibi yapısal analiz yazılımları ile mimari/CAD projelerinin bakımını, temizliğini ve yedeklenmesini tek merkezden yöneten **hepsi-bir-arada (All-in-One)** mühendislik çalışma süitidir.
+Statik Dizayn Mühendislik için özel olarak geliştirilmiş **SD Proje Araçları (SD Tools)**; ETABS, SAP2000, SAFE, ideCAD, STA4CAD ve Revit gibi yapısal analiz/BIM yazılımları ile mimari/CAD projelerinin bakımını, temizliğini ve yedeklenmesini tek merkezden yöneten **hepsi-bir-arada (All-in-One)** mühendislik çalışma süitidir.
 
 Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, model kontrolü vb.) uygun, genişletilebilir modern bir sekme mimarisine sahiptir.
 
@@ -8,17 +8,17 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ---
 
-## 📦 Kurulum ve Dağıtım (v2.6)
+## 📦 Kurulum ve Dağıtım (v2.6.1)
 
 - **🚀 Kurulum Sihirbazı (`SDTools_Setup.exe` - Önerilen):**
-  Tek dosyalık **`SDTools_Setup.exe`** (~402 KB) kurulum paketini çalıştırarak yazılımı bilgisayarınıza (`%LocalAppData%\Programs\SDTools` veya `C:\Program Files\SDTools` altına) kurabilirsiniz. Kurulum sihirbazı:
+  Tek dosyalık **`SDTools_Setup.exe`** kurulum paketini çalıştırarak yazılımı bilgisayarınıza (`%LocalAppData%\Programs\SDTools` veya `C:\Program Files\SDTools` altına) kurabilirsiniz. Kurulum sihirbazı:
   - Masaüstü ve Başlat Menüsü kısayollarını otomatik oluşturur,
   - `config.json` ayar dosyasını kurulum klasörü içinde atomik olarak tutar (**Masaüstünde asla `config.json` görünmez**),
   - Windows *Program Ekle veya Kaldır* listesine güvenli kaldırıcı (Uninstaller) kaydı ekler.
 - **🔄 GitHub Üzerinden SHA-256 Doğrulamalı Online Güncelleme (Auto-Update):**
   Uygulama açılışında veya **Hakkında -> `🔄 Güncelleme Kontrolü`** butonuna tıklandığında GitHub (`version.json`) üzerinden yeni sürüm kontrolü yapılır. Yeni bir sürüm yayınlandığında SHA-256 bütünlük doğrulamasıyla indirilir ve yerleşik `--apply-update` mekanizmasıyla kendi kendini güvenle günceller.
 - **⚡ Taşınabilir (Portable) Tek `.exe` Kullanımı:**
-  Kurulum yapmadan doğrudan **`SDTools.exe`** (~303 KB) dosyasını da çalıştırabilirsiniz. Doğrudan Masaüstü'nden çalıştırılsa bile ayar dosyasını otomatik olarak `%LocalAppData%\Programs\SDTools\config.json` altında saklar.
+  Kurulum yapmadan doğrudan **`SDTools.exe`** dosyasını da çalıştırabilirsiniz. Doğrudan Masaüstü'nden çalıştırılsa bile ayar dosyasını otomatik olarak `%LocalAppData%\Programs\SDTools\config.json` altında saklar.
 
 ---
 
@@ -27,7 +27,7 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 1. **🧹 Proje Temizleme Modülü:**
    - ETABS, SAP2000, SAFE, ideCAD ve STA4CAD gibi yazılımların analiz sırasında ürettiği yüzlerce dinamik geçici dosya uzantısını (`.LOG`, `.OUT`, `.F06`, `.K01`, `.Y01`, `.$et`, `.$2k`, `.val` vb.) **"Korunan Uzantılar ve Kategoriler Dışındakileri Temizle"** prensibiyle güvenle temizler.
    - **📁 Modern Windows Gezgini Klasör Seçici:** Klasör seçme pencereleri adres çubuklu, arama kutulu ve *Hızlı Erişim* destekli standart **Windows Gezgini (Explorer)** görünümünde açılır.
-   - **🛡️ Korunacak Dosyaları Belirle & Bağımsız Yedek Dosyaları Kontrolü:** İki kolonlu modern seçim penceresi ile ana mühendislik modellerini (`ETABS: .edb, .e2k`, `SAP2000: .sdb, .s2k`, `SAFE: .fdb, .f2k`, `ideCAD: .ide*`, `CAD: .dwg, .dxf, .dwt, .ctb`, `STA4CAD: .st4, .stl`), sıkıştırılmış arşiv paketlerini (`.zip`, `.rar`, `.7z`, `.tar`, `.gz`) ve ofis/medya formatlarını kategori bazında korur. **`Yedek Dosyaları (.bak, .ebk, .sbk, .fbk)`** ayrı bir satır olarak sunulur ve varsayılan olarak silinir (işaretsizdir); istenildiğinde işaretlenerek korunabilir.
+   - **🛡️ Korunacak Dosyaları Belirle & Bağımsız Yedek Dosyaları Kontrolü:** İki kolonlu modern seçim penceresi ile ana mühendislik/BIM modellerini (`ETABS: .edb, .e2k`, `SAP2000: .sdb, .s2k`, `SAFE: .fdb, .f2k`, `ideCAD: .ide*`, `CAD: .dwg, .dxf, .dwt, .ctb`, `Revit: .rvt, .rfa, .rte`, `STA4CAD: .st4, .stl`), sıkıştırılmış arşiv paketlerini (`.zip`, `.rar`, `.7z`, `.tar`, `.gz`) ve ofis/medya formatlarını kategori bazında korur. **`Yedek Dosyaları (.bak, .ebk, .sbk, .fbk)`** ayrı bir satır olarak sunulur ve varsayılan olarak silinir (işaretsizdir); istenildiğinde işaretlenerek korunabilir.
    - **🔒 Sistem Yedekleri ve Log Koruması:** Programın kendi ürettiği otomatik yedek arşivleri (`_Modeller_Otomatik_Yedek_*.zip`), yedek klasörleri (`SD_Backup_*`) ve işlem raporları (`_yedekleme_logu_*`) her koşulda koruma altındadır.
    - **📁 Akıllı Alt Klasör Seçimi (Genişletilebilir Klasör Ağacı):** Hedef proje klasörü altındaki analiz klasörlerini (`ETABS, SAP2000, ideCAD, SAFE, CAD, STA4CAD`) tek tıkla varsayılanlardan veya derin ağaç yapısından seçer. Doğrudan hedef klasörün kendisi seçildiğinde de (`C:\Proje\ETABS` gibi) yalnız seçilen kök klasörün adını kontrol ederek akıllı eşleşme sağlar.
    - **🔄 Otomatik Tarama Kilidi Güvenliği:** Tarama yapıldıktan sonra klasör yolu, gün sınırı veya koruma filtreleri değiştirilirse **"Temizle" butonu otomatik kilitlenir** ve güncel ayarlarla yeniden tarama yapılması istenir.
@@ -37,7 +37,8 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 2. **💾 Proje Yedekleme Modülü (SD Backup Entegre):**
    - Proje klasörlerini harici disklere, SSD'lere veya ağ sürücülerine hızla yedekler.
-   - Çift kolonlu akıllı filtreleme (`ideCAD`, `CAD`, `ETABS`, `SAP2000`, `SAFE`, `STA4CAD`, `Fischer`, `idea Statika`, `SketchUp`, `Excel`, `Word`, `PDF`, `Arşiv`, `Yedek Dosyaları (.bak, .ebk, .sbk, .fbk)`, `Resim`, `Video`, `IFC`).
+   - **📦 Tüm Dosyaları Yedekle (`*.*`) Modu:** *"Dosya Türü Ayrımı Yapmadan Tüm Dosyaları Yedekle (`*.*`)"* kutusu işaretlendiğinde kategori seçimleri devre dışı bırakılarak kaynak klasördeki **tüm dosya türleri** hiçbir uzantı filtresine takılmadan birebir yedeklenir.
+   - **➕ Özel Uzantılar & Çift Kolonlu Akıllı Filtreleme:** `ideCAD`, `CAD`, `Revit (.rvt, .rfa, .rte)`, `ETABS`, `SAP2000`, `SAFE`, `STA4CAD`, `Fischer`, `idea Statika`, `SketchUp`, `IFC`, `Excel`, `Word`, `PowerPoint`, `PDF`, `Metin`, `Arşiv`, `Yedek Dosyaları (.bak, .ebk, .sbk, .fbk)`, `Resim`, `Video` kategorilerine ek olarak **`➕ Özel Uzantılar`** kutusuyla istediğiniz özel dosya uzantılarını da yedeklemeye dahil edebilirsiniz.
    - **⚡ Artımlı (Incremental) ve Atomik Yedekleme:** Değişmemiş dosyaları saniyeler içinde atlar; kopyalanan dosyaları önce geçici (`.tmp`) dosyaya yazıp işlem tamamlandığında atomik olarak hedefe yerleştirir. Böylece kesinti veya iptal durumunda hedefteki eski sağlam yedek asla bozulmaz.
    - Tarih ve dosya boyutu (MB) filtreleme desteği.
    - Her işlem sonunda hedef klasörde tarihçeli detaylı denetim raporu (`_yedekleme_logu_*.txt`) üretir.
@@ -66,7 +67,9 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ### 2️⃣ Proje Yedekleme Rehberi (Sekme 2)
 1. **Kaynak ve Hedef Seçimi:** Windows Gezgini penceresi ile yedeklenecek ana proje dizinini (**Kaynak**) ve yedeklerin aktarılacağı diski/klasörü (**Hedef**) seçin.
-2. **Kategori Seçimi:** Sol ve sağ kolonlardan yedeklenmesini istediğiniz proje, ofis, medya veya arşiv kategorilerini işaretleyin (`Yedek Dosyaları (.bak, .ebk, .sbk, .fbk)` satırı isteğe bağlı olarak işaretlenebilir).
+2. **Kategori Seçimi veya Tüm Dosyalar (`*.*`) Modu:**
+   - Sol ve sağ kolonlardan yedeklenmesini istediğiniz proje, ofis, medya veya arşiv kategorilerini işaretleyin (`Yedek Dosyaları (.bak, .ebk, .sbk, .fbk)` satırı isteğe bağlı olarak işaretlenebilir) veya alt kısımdaki **`➕ Özel Uzantılar`** kutusuna ek uzantılar yazın.
+   - Eğer dosya türü ayrımı yapmadan klasördeki **her şeyi** yedeklemek istiyorsanız, sağ üstteki **`📦 Dosya Türü Ayrımı Yapmadan Tüm Dosyaları Yedekle (*.*)`** kutusunu işaretleyin.
 3. **Artımlı Yedekleme ve Filtreler:**
    - **Artımlı Yedekleme:** Hedefte zaten aynı boyutta ve güncellikte bulunan dosyaları atlayarak yedekleme süresini büyük ölçüde kısaltır.
    - **Tarih ve Boyut Filtresi:** Belirli bir tarihten sonra değişen veya belirli bir MB sınırının altındaki dosyaları filtreleyebilirsiniz.
@@ -74,7 +77,7 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ---
 
-## 🛡️ Korunan Dosya Uzantıları ve Kategoriler (v2.6)
+## 🛡️ Korunan Dosya Uzantıları ve Kategoriler (v2.6.1)
 
 | Kategori | Uzantılar | Varsayılan Durum |
 | :--- | :--- | :--- |
@@ -82,6 +85,7 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 | **SAP2000 Modelleri** | `.sdb`, `.s2k` | 🛡️ **KORUNUR (Model)** |
 | **SAFE Modelleri** | `.fdb`, `.f2k` | 🛡️ **KORUNUR (Model)** |
 | **ideCAD Modelleri** | `.ide*` (`.ide7`..`.ide11`, `.ide85`, `.ide`) | 🛡️ **KORUNUR (Model)** |
+| **Revit (BIM) Modelleri** | `.rvt`, `.rfa`, `.rte` | 🛡️ **KORUNUR (Model)** |
 | **STA4CAD Modelleri** | `.st4`, `.stl` | 🛡️ **KORUNUR (Model)** |
 | **CAD & Çizim & 3D** | `.dwg`, `.dxf`, `.dwt`, `.ctb`, `.shx`, `.lsp`, `.skp`, `.ifc`, `.ideaCon`, `.cfix` | 🛡️ **KORUNUR (Model)** |
 | **Arşiv Paketleri** | `.zip`, `.rar`, `.7z`, `.tar`, `.gz` | 📦 **KORUNUR (Yedek/Arşiv)** |
@@ -97,9 +101,9 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ## ⚙️ Yapılandırma (`config.json`) ve Derleme (`build.ps1`)
 
-- Tüm kullanıcı tercihleri (klasör yolları, gün sınırı, temizleme ve yedekleme kategori seçimleri, özel uzantılar, hariç tutulan klasörler ve tema) kurulum klasöründeki `config.json` dosyasında otomatik olarak saklanır.
+- Tüm kullanıcı tercihleri (klasör yolları, gün sınırı, temizleme ve yedekleme kategori seçimleri, tüm dosyaları yedekleme (`*.*`) tercihi, özel uzantılar, hariç tutulan klasörler ve tema) kurulum klasöründeki `config.json` dosyasında otomatik olarak saklanır.
 - Kaynak kodlardan (`SDTools_App.cs` ve `SDTools_Setup.cs`) hem `SDTools.exe` hem de `SDTools_Setup.exe` paketini tek tıkla derlemek için PowerShell üzerinden `.\build.ps1` betiğini çalıştırabilirsiniz.
 
 ---
 
-*Geliştirici: Statik Dizayn Mühendislik • Web: https://statikdizayn.com • Sürüm: v2.6 • Powered by Google Gemini*
+*Geliştirici: Statik Dizayn Mühendislik • Web: https://statikdizayn.com • Sürüm: v2.6.1 • Powered by Google Gemini*

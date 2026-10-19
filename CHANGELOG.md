@@ -4,7 +4,19 @@ Bu sayfada **SD Proje Araçları (SD Tools)** yazılımının sürümlerinde yap
 
 ---
 
-## 🛡️ Sürüm 2.6 (18 Ekim 2026) - *Güncel Sürüm*
+## 📦 Sürüm 2.6.1 (19 Ekim 2026) - *Güncel Sürüm*
+
+- **📦 Dosya Türü Ayrımı Yapmadan Tüm Dosyaları Yedekle (`*.*`) Modu:**
+  - Proje Yedekleme modülündeki *"3. Yedeklenecek Dosya Türleri"* başlığının sağ tarafına **`📦 Dosya Türü Ayrımı Yapmadan Tüm Dosyaları Yedekle (*.*)`** seçeneği eklendi.
+  - Bu seçenek işaretlendiğinde kategori listesi hafızadaki seçimlerinizi kaybetmeden görsel olarak devre dışı (pasif) bırakılır ve kaynak klasördeki **tüm dosya türleri (`*.*`)** hiçbir uzantı kısıtlamasına takılmadan birebir yedeklenir (Hariç tutulan klasörler, tarih, boyut ve artımlı yedekleme filtreleri yine çalışmaya devam eder).
+- **➕ Proje Yedekleme İçin Özel Uzantı Kutusu:**
+  - Proje Yedekleme modülünün alt kısmına **`➕ Özel Uzantılar`** metin kutusu eklendi. Standart kategorilerde yer almayan özel uzantıları (`.dwf, .lumion, .max, .fbx` vb.) virgülle ayırarak doğrudan yedeklemeye dahil edebilirsiniz.
+- **🏗️ Revit (`.rvt, .rfa, .rte`) BIM Desteği:**
+  - Hem Proje Temizleme hem Proje Yedekleme modüllerindeki **Mühendislik & CAD / BIM** kolonuna varsayılan olarak **`Revit (.rvt, .rfa, .rte)`** kategorisi eklendi ve kritik model koruması kapsamına alındı.
+
+---
+
+## 🛡️ Sürüm 2.6 (18 Ekim 2026)
 
 - **🔄 SHA-256 Doğrulamalı Online Güncelleme (`--apply-update`):**
   - İndirme adresini yalnızca resmi dağıtım deposuna (`mafiamax/sd-releases`) kilitler, indirilen paketin **SHA-256 kriptografik özetini** ve PE (`MZ`) başlığını doğrular.
