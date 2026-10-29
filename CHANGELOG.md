@@ -4,7 +4,21 @@ Bu sayfada **SD Proje Araçları (SD Tools)** yazılımının sürümlerinde yap
 
 ---
 
-## 🚀 Sürüm 2.7 (29 Ekim 2026) - *Güncel Sürüm*
+## 🔑 Sürüm 2.8 (29 Ekim 2026) - *Güncel Sürüm*
+
+- **☁️ Google Firebase Tabanlı Online Lisans & Canlı Kullanım Takip Sistemi:**
+  - İlk açılışta **Kullanıcı / Ofis Adı** ve **Benzersiz Lisans Anahtarı** ile çevrimiçi aktivasyon yapısı eklendi.
+  - Firebase Realtime Database konsolundan (`sd-tools-e7c33`) lisansları tek tıkla aktif/pasif (`is_active`) yapabilme, maksimum bilgisayar sınırı (`max_devices`) tanımlama ve hangi kullanıcının hangi bilgisayardan en son ne zaman giriş yaptığını ve toplam kullanım sayısını (`launch_count`) canlı olarak izleyebilme imkanı sağlandı.
+- **🔒 Donanım Kimliği (HWID) Eşleştirmesi:**
+  - Her lisans anahtarı varsayılan olarak etkinleştirildiği bilgisayarın benzersiz donanım kimliğine (`HW-XXXX-XXXX-XXXX`) kilitlenir ve izinsiz çoklu bilgisayar paylaşımını önler.
+- **📴 3 Gün (72 Saat) Çevrimdışı Çalışma Toleransı (Offline Grace Period):**
+  - İnternet kesintilerine karşı son başarılı çevrimiçi doğrulamadan itibaren **72 saat (3 gün)** boyunca internet bağlantısı olmadan kesintisiz çalışma desteği eklendi (AES-256 + SHA-256 imzalı yerel önbellek ve sistem saati geri alma koruması ile).
+- **ℹ️ Hakkında Penceresi & Alt Bilgi Lisans Göstergesi:**
+  - Ana pencerenin sağ alt köşesinde aktif lisans sahibi gösterilir; **Hakkında -> `🔑 Lisans`** butonu üzerinden lisans/kullanıcı bilgisi her zaman görüntülenebilir veya güncellenebilir.
+
+---
+
+## 🚀 Sürüm 2.7 (29 Ekim 2026)
 
 - **⚡ Tam Asenkron Tarama / Temizleme (`Task.Run`) & `⏹ Durdur` Butonu:**
   - Proje Temizleme modülündeki `DoEvents()` yapısı kaldırılarak `async/await` + `Task.Run` ve `CancellationTokenSource` mimarisine geçildi.

@@ -1,10 +1,10 @@
 {
-  "version": "2.7.0",
-  "display_version": "v2.7",
+  "version": "2.8.0",
+  "display_version": "v2.8",
   "release_date": "29 Ekim 2026",
   "download_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools.exe",
   "setup_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools_Setup.exe",
-  "sha256": "f594ffc74edb820fec6b786128d5e4d2e19da9b2c71862d01889d48e27d29c31",
+  "sha256": "4d524a101fa12ad779fca368603f4e26c2b7857024001f294d65a00a3b8435ea",
   "changelog_url": "https://github.com/mafiamax/sd-releases/blob/main/CHANGELOG.md",
-  "notes": "• Asenkron Tarama/Temizleme (Task.Run) ve '⏹ Durdur' iptal butonu eklendi.\n• 4 iş parçacıklı paralel yedekleme ve açık/kilitli dosya toleransı (FileShare.ReadWrite) eklendi.\n• Windows Gezgini sağ tık menüsü entegrasyonu ('SD Tools ile Proje Temizle / Yedekle') eklendi.\n• Modüler partial class mimarisi, yerleşik JavaScriptSerializer JSON yönetimi ve bellek optimizasyonları tamamlandı."
+  "notes": "• Google Firebase tabanlı Online Lisans Doğrulama ve Canlı Kullanım Takip Sistemi eklendi.\n• Benzersiz Donanım Kimliği (HWID) kilidi ve 3 gün (72 saat) şifreli çevrimdışı çalışma toleransı eklendi.\n• Asenkron Tarama/Temizleme, 4 iş parçacıklı paralel yedekleme, açık/kilitli dosya toleransı (FileShare.ReadWrite) ve Windows Sağ Tık Menüsü entegrasyonu yer almaktadır."
 }

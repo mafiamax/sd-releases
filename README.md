@@ -1,4 +1,4 @@
-# 🏗️ SD Proje Araçları (SD Tools) v2.7
+# 🏗️ SD Proje Araçları (SD Tools) v2.8
 
 Statik Dizayn Mühendislik için özel olarak geliştirilmiş **SD Proje Araçları (SD Tools)**; ETABS, SAP2000, SAFE, ideCAD, STA4CAD ve Revit gibi yapısal analiz/BIM yazılımları ile mimari/CAD projelerinin bakımını, temizliğini ve yedeklenmesini tek merkezden yöneten **hepsi-bir-arada (All-in-One)** mühendislik çalışma süitidir.
 
@@ -8,7 +8,7 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ---
 
-## 📦 Kurulum ve Dağıtım (v2.7)
+## 📦 Kurulum ve Dağıtım (v2.8)
 
 - **🚀 Kurulum Sihirbazı (`SDTools_Setup.exe` - Önerilen):**
   Tek dosyalık **`SDTools_Setup.exe`** kurulum paketini çalıştırarak yazılımı bilgisayarınıza (`%LocalAppData%\Programs\SDTools` veya `C:\Program Files\SDTools` altına) kurabilirsiniz. Kurulum sihirbazı:
@@ -49,9 +49,10 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 3. **🛡️ Sistem Klasörü ve Sembolik Bağ Koruması:**
    - `C:\`, `C:\Windows`, `Program Files`, `$RECYCLE.BIN` gibi işletim sistemi dizinlerinin kazara taranmasını/temizlenmesini engeller ve sembolik bağlardan (ReparsePoint / Junction) kaynaklı sonsuz döngüleri önler.
 
-4. **☀️ Canlı Açık / Koyu Tema, Online Güncelleme & Sürüm Notları:**
+4. **☀️ Canlı Açık / Koyu Tema, Online Lisanslama, Güncelleme & Sürüm Notları:**
    - Sağ üstteki toggle butonu ile tek tıkla canlı olarak tema değiştirilebilir.
-   - **Hakkında -> `🔄 Güncelleme Kontrolü`** ve **`📋 Sürüm Notları`** pencereleri ile uygulama içinden sürüm geçmişi incelenebilir, sağ tık menüsü yönetilebilir ve yeni sürümler tek tıkla yüklenebilir.
+   - **🔑 Online Lisans ve Cihaz Koruması:** Google Firebase tabanlı çevrimiçi lisans doğrulama, donanım kimliği (`HWID`) eşleştirmesi ve 3 gün (72 saat) çevrimdışı çalışma toleransı içerir.
+   - **Hakkında -> `🔄 Güncelleme Kontrolü`**, **`🔑 Lisans`** ve **`📋 Sürüm Notları`** pencereleri ile uygulama içinden sürüm geçmişi incelenebilir, lisans ve sağ tık menüsü yönetilebilir ve yeni sürümler tek tıkla yüklenebilir.
 
 ---
 
@@ -80,7 +81,7 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ---
 
-## 🛡️ Korunan Dosya Uzantıları ve Kategoriler (v2.7)
+## 🛡️ Korunan Dosya Uzantıları ve Kategoriler (v2.8)
 
 | Kategori | Uzantılar | Varsayılan Durum |
 | :--- | :--- | :--- |
