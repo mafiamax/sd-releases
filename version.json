@@ -1,10 +1,10 @@
 {
-  "version": "2.6.1",
-  "display_version": "v2.6.1",
-  "release_date": "19 Ekim 2026",
+  "version": "2.7.0",
+  "display_version": "v2.7",
+  "release_date": "29 Ekim 2026",
   "download_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools.exe",
   "setup_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools_Setup.exe",
-  "sha256": "4a93225df10111fc0374ef5538d5ab67b1b81dfb5f67154068b6b65e891775e7",
+  "sha256": "f594ffc74edb820fec6b786128d5e4d2e19da9b2c71862d01889d48e27d29c31",
   "changelog_url": "https://github.com/mafiamax/sd-releases/blob/main/CHANGELOG.md",
-  "notes": "• Proje Yedekleme modülüne 'Dosya Türü Ayrımı Yapmadan Tüm Dosyaları Yedekle (*.*)' seçeneği eklendi.\n• Proje Yedekleme modülüne hızlı '➕ Özel Uzantılar' giriş kutusu eklendi.\n• Mühendislik ve BIM kategorilerine varsayılan olarak Revit (.rvt, .rfa, .rte) desteği eklendi."
+  "notes": "• Asenkron Tarama/Temizleme (Task.Run) ve '⏹ Durdur' iptal butonu eklendi.\n• 4 iş parçacıklı paralel yedekleme ve açık/kilitli dosya toleransı (FileShare.ReadWrite) eklendi.\n• Windows Gezgini sağ tık menüsü entegrasyonu ('SD Tools ile Proje Temizle / Yedekle') eklendi.\n• Modüler partial class mimarisi, yerleşik JavaScriptSerializer JSON yönetimi ve bellek optimizasyonları tamamlandı."
 }

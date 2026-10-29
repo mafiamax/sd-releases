@@ -4,7 +4,25 @@ Bu sayfada **SD Proje Araçları (SD Tools)** yazılımının sürümlerinde yap
 
 ---
 
-## 📦 Sürüm 2.6.1 (19 Ekim 2026) - *Güncel Sürüm*
+## 🚀 Sürüm 2.7 (29 Ekim 2026) - *Güncel Sürüm*
+
+- **⚡ Tam Asenkron Tarama / Temizleme (`Task.Run`) & `⏹ Durdur` Butonu:**
+  - Proje Temizleme modülündeki `DoEvents()` yapısı kaldırılarak `async/await` + `Task.Run` ve `CancellationTokenSource` mimarisine geçildi.
+  - Ağ sürücüleri veya çok büyük proje klasörleri taranırken arayüz (UI) artık hiçbir şekilde donmaz; dilediğiniz anda **`⏹ Durdur`** butonu ile tarama, temizleme veya ZIP yedekleme işlemini anında iptal edebilirsiniz.
+- **🚀 Çoklu İş Parçacıklı Hızlı Yedekleme & Açık/Kilitli Dosya Toleransı (`FileShare.ReadWrite`):**
+  - Proje Yedekleme motoru 4 paralel iş parçacığı (`MaxDegreeOfParallelism = 4`) ile hızlandırıldı.
+  - Yedekleme veya ZIP arşivleme sırasında AutoCAD, ETABS, Revit veya Excel'de **o anda açık/kilitli olan dosyalar** `FileShare.ReadWrite | FileShare.Delete` akış okuma yöntemiyle hata vermeden güvenle yedeklenir.
+- **🖱️ Windows Gezgini Sağ Tık Menüsü Entegrasyonu:**
+  - Herhangi bir klasöre sağ tıklayıp **`SD Tools ile Proje Temizle`** (`--clean`) veya **`SD Tools ile Yedekle`** (`--backup`) seçenekleriyle yazılımı doğrudan o klasör seçili olarak başlatabilirsiniz.
+  - Kurulum Sihirbazı (`SDTools_Setup.exe`) içinden veya uygulama içindeki **Hakkında** penceresinden sağ tık menüsünü tek tıkla ekleyip kaldırabilirsiniz.
+- **🧱 Modüler Kod Mimarisi, Yerleşik JSON Serileştirici & Bellek Optimizasyonu:**
+  - Kaynak kod, tek `.exe` taşınabilirliğini koruyacak şekilde `partial class` yapısıyla mantıksal modüllere (`SDTools_App.cs`, `SDTools_Xaml.cs`, `SDTools_Config.cs`, `SDTools_Cleaner.cs`, `SDTools_Backup.cs`, `SDTools_Dialogs.cs`, `SDTools_Updater.cs`) ayrıldı.
+  - Regex tabanlı `config.json` ve `version.json` ayrıştırma yapısı `.NET Framework` yerleşik `JavaScriptSerializer` (`System.Web.Extensions.dll`) yapısına geçirildi.
+  - `FileItem` üzerindeki `FormattedSize`, `AgeDisplay` ve `FormattedDate` alanları hesaplanan özelliklere (`computed properties`) dönüştürüldü ve `DataGrid` satır/sütun sanallaştırması (`VirtualizingStackPanel`) etkinleştirildi.
+
+---
+
+## 📦 Sürüm 2.6.1 (19 Ekim 2026)
 
 - **📦 Dosya Türü Ayrımı Yapmadan Tüm Dosyaları Yedekle (`*.*`) Modu:**
   - Proje Yedekleme modülündeki *"3. Yedeklenecek Dosya Türleri"* başlığının sağ tarafına **`📦 Dosya Türü Ayrımı Yapmadan Tüm Dosyaları Yedekle (*.*)`** seçeneği eklendi.
