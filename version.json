@@ -1,10 +1,10 @@
 {
-  "version": "2.8.0",
-  "display_version": "v2.8",
+  "version": "2.8.1",
+  "display_version": "v2.8.1",
   "release_date": "29 Ekim 2026",
   "download_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools.exe",
   "setup_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools_Setup.exe",
-  "sha256": "e2528974ac505a47b0d2653a42e636e4131a825ec7ee5c6878b2ada24c02b370",
+  "sha256": "14f22720d514f372c408c3482cc60f9059f2fda5301b6559585e357ee89be7a5",
   "changelog_url": "https://github.com/mafiamax/sd-releases/blob/main/CHANGELOG.md",
-  "notes": "• Google Firebase tabanlı Online Lisans Doğrulama ve Canlı Kullanım Takip Sistemi eklendi.\n• Benzersiz Donanım Kimliği (HWID) kilidi ve 3 gün (72 saat) şifreli çevrimdışı çalışma toleransı eklendi.\n• Asenkron Tarama/Temizleme, 4 iş parçacıklı paralel yedekleme, açık/kilitli dosya toleransı (FileShare.ReadWrite) ve Windows Sağ Tık Menüsü entegrasyonu yer almaktadır."
+  "notes": "• Hızlı Açılış (0 ms gecikmesiz arka plan lisans senkronizasyonu) ve bilgisayar adı değişikliğinden etkilenmeyen kararlı HWID yapısı eklendi.\n• Yedeklemede hedef sürücü boş alan kontrolü, kopyalanan dosya boyutu doğrulaması ve açık/kilitli kopyalanan dosyaların raporda işaretlenmesi sağlandı.\n• Temizlik onayında 'Bilinen Analiz Artıkları' ve 'Diğer Uzantılar' ikili güvenlik ayrımı ile kaldırıcıda (Uninstaller) isteğe bağlı lisans koruma seçimi eklendi."
 }

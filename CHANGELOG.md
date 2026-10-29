@@ -4,11 +4,27 @@ Bu sayfada **SD Proje Araçları (SD Tools)** yazılımının sürümlerinde yap
 
 ---
 
-## 🔑 Sürüm 2.8 (29 Ekim 2026) - *Güncel Sürüm*
+## 🛡️ Sürüm 2.8.1 (29 Ekim 2026) - *Güncel Sürüm*
 
-- **☁️ Google Firebase Tabanlı Online Lisans & Canlı Kullanım Takip Sistemi:**
+- **⚡ Gecikmesiz Hızlı Açılış (0 ms) & Kararlı Donanım Kimliği (HWID):**
+  - Son 6 saat içinde doğrulanmış lisanslarda uygulama (ve Windows Gezgini sağ tık menüsü kısayolları) **0 ms gecikmeyle anında açılır**; lisans senkronizasyonu pencere açıldıktan sonra arka planda sessizce gerçekleştirilir.
+  - Donanım kimliği (`HWID`) hesaplaması yalnızca Windows `MachineGuid` değerine bağlandı; böylece bilgisayar adı (`MachineName`) değiştirildiğinde lisans kilidi etkilenmez ve eski HWID kayıtları otomatik olarak yeni yapıya taşınır.
+  - Sunucu erişim hatalarında yerel önbellek korunarak 72 saatlik çevrimdışı çalışma toleransı devreye girer; kaldırıcıda (`Uninstall`) lisans kaydını koruma veya silme tercihi kullanıcıya sunulur.
+- **💾 Yedekleme Doğrulaması, Boş Alan Kontrolü & Açık Dosya İşaretleme:**
+  - Yedekleme başlamadan önce hedef sürücüde yeterli boş alan olup olmadığı (`DriveInfo`) kontrol edilir; geçici (`.tmp`) dosyalar hedefe taşınmadan önce kaynak dosya boyutuyla karşılaştırılarak doğrulanır.
+  - Başka bir yazılımda açık/kilitli iken (`FileShare.ReadWrite`) kopyalanan dosyalar yedekleme raporunda ve bitiş özetinde *"Açık dosya olarak kopyalandı, tutarlılığı garanti değil"* uyarısıyla ayrıca listelenir.
+  - ZIP yedeklemede (`BackupModelsToZip`) okunamayan tekil dosyalar tüm arşivi iptal etmek yerine atlanarak raporlanır ve arşiv içi dosya yolları evrensel `/` standardına dönüştürülür.
+- **🧹 Temizlik Onayında İkili Uzantı Ayrımı & Sağ Tık Kök Sürücü Desteği:**
+  - Temizlik onay penceresinde silinecek dosyalar **"Bilinen Analiz / Geçici Artıklar"** (`.log, .out, .f06, .k01, .$et, .val, .tmp` vb.) ve **"Diğer / Tanımlanmamış Uzantılar"** olarak ikiye ayrılır; tanımlanmamış uzantılar varsa (özellikle ağ sürücülerinde veya Geri Dönüşüm Kutusu kapalıyken) ikinci bir açık onay istenir.
+  - Sağ tık menüsünden sürücü kök dizinleri (`C:\`, `D:\`) gönderildiğinde oluşan tırnak kaçış karakteri (`C:"` -> `C:\`) otomatik normalize edilir.
+
+---
+
+## 🔑 Sürüm 2.8 (29 Ekim 2026)
+
+- **☁️ Online Lisans & Cihaz Eşleştirme Sistemi:**
   - İlk açılışta **Kullanıcı / Ofis Adı** ve **Benzersiz Lisans Anahtarı** ile çevrimiçi aktivasyon yapısı eklendi.
-  - Firebase Realtime Database konsolundan (`sd-tools-e7c33`) lisansları tek tıkla aktif/pasif (`is_active`) yapabilme, maksimum bilgisayar sınırı (`max_devices`) tanımlama ve hangi kullanıcının hangi bilgisayardan en son ne zaman giriş yaptığını ve toplam kullanım sayısını (`launch_count`) canlı olarak izleyebilme imkanı sağlandı.
+  - Çevrimiçi yönetim altyapısı üzerinden lisans durumu ve tanımlı cihaz sınırı kontrol edilir.
 - **🔒 Donanım Kimliği (HWID) Eşleştirmesi:**
   - Her lisans anahtarı varsayılan olarak etkinleştirildiği bilgisayarın benzersiz donanım kimliğine (`HW-XXXX-XXXX-XXXX`) kilitlenir ve izinsiz çoklu bilgisayar paylaşımını önler.
 - **📴 3 Gün (72 Saat) Çevrimdışı Çalışma Toleransı (Offline Grace Period):**
