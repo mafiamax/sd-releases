@@ -4,7 +4,7 @@
   "release_date": "29 Ekim 2026",
   "download_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools.exe",
   "setup_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools_Setup.exe",
-  "sha256": "14f22720d514f372c408c3482cc60f9059f2fda5301b6559585e357ee89be7a5",
+  "sha256": "6fb56187e48298af4641856f38e9d11ec55c6c0e96c61e885831c9242521a4b1",
   "changelog_url": "https://github.com/mafiamax/sd-releases/blob/main/CHANGELOG.md",
   "notes": "• Hızlı Açılış (0 ms gecikmesiz arka plan lisans senkronizasyonu) ve bilgisayar adı değişikliğinden etkilenmeyen kararlı HWID yapısı eklendi.\n• Yedeklemede hedef sürücü boş alan kontrolü, kopyalanan dosya boyutu doğrulaması ve açık/kilitli kopyalanan dosyaların raporda işaretlenmesi sağlandı.\n• Temizlik onayında 'Bilinen Analiz Artıkları' ve 'Diğer Uzantılar' ikili güvenlik ayrımı ile kaldırıcıda (Uninstaller) isteğe bağlı lisans koruma seçimi eklendi."
 }
