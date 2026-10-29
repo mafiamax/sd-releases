@@ -4,7 +4,7 @@
   "release_date": "29 Ekim 2026",
   "download_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools.exe",
   "setup_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools_Setup.exe",
-  "sha256": "4d524a101fa12ad779fca368603f4e26c2b7857024001f294d65a00a3b8435ea",
+  "sha256": "e2528974ac505a47b0d2653a42e636e4131a825ec7ee5c6878b2ada24c02b370",
   "changelog_url": "https://github.com/mafiamax/sd-releases/blob/main/CHANGELOG.md",
   "notes": "• Google Firebase tabanlı Online Lisans Doğrulama ve Canlı Kullanım Takip Sistemi eklendi.\n• Benzersiz Donanım Kimliği (HWID) kilidi ve 3 gün (72 saat) şifreli çevrimdışı çalışma toleransı eklendi.\n• Asenkron Tarama/Temizleme, 4 iş parçacıklı paralel yedekleme, açık/kilitli dosya toleransı (FileShare.ReadWrite) ve Windows Sağ Tık Menüsü entegrasyonu yer almaktadır."
 }
