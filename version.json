@@ -1,10 +1,10 @@
 {
-  "version": "2.9.0",
-  "display_version": "v2.9",
+  "version": "2.9.1",
+  "display_version": "v2.9.1",
   "release_date": "3 Kasım 2026",
   "download_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools.exe",
   "setup_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools_Setup.exe",
-  "sha256": "c3b51bee3fcf792adeaff65b510ffe654e7b3f4cec113410b47128254e128e48",
+  "sha256": "373e550fc0c0e6dd569d30f590d79d59d2dae9bb93db090271922717f2cee6fe",
   "changelog_url": "https://github.com/mafiamax/sd-releases/blob/main/CHANGELOG.md",
-  "notes": "• Yeni Proje Kurulum sekmesi: standart klasör ağacı, sıradaki proje kodunun otomatik önerilmesi ve TBDY 2018 / DBYBHY 2007 destekli proje_bilgi.json künyesi.\n• Arşiv klasörleri desteği: bitmiş projelerin taşındığı arşivler de taranarak aynı proje kodunun tekrar verilmesi önlendi.\n• Künye değer kontrolü, önceki künyenin .bak olarak saklanması, yedekleme özetinde toplam MB/GB gösterimi."
+  "notes": "• Yeni Proje Kurulum: 'Seçileni Sil' düzeltildi; mevcut proje yüklenince projedeki klasörler listede gösterilir; şablon klasörü artık boş olarak projeye kopyalanmaz.\n• Künye formu boş açılır, 'Formu Temizle' tüm alanları boşaltır; yeni döşeme tipleri ve Yapı Alanı (m²) alanı eklendi.\n• Pencere varsayılan olarak %20 daha büyük açılır (ekrana sığacak şekilde) ve son boyut hatırlanır; beklenmeyen hatalar programı kapatmadan günlüğe yazılır."
 }

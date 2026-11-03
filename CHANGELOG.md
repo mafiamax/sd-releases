@@ -4,7 +4,29 @@ Bu sayfada **SD Proje Araçları (SD Tools)** yazılımının sürümlerinde yap
 
 ---
 
-## 📁 Sürüm 2.9 (3 Kasım 2026) - *Güncel Sürüm*
+## 🔧 Sürüm 2.9.1 (3 Kasım 2026) - *Güncel Sürüm*
+
+- **📁 Yeni Proje Kurulum – Alt Klasör Ağacı:**
+  - `🗑️ Seçileni Sil` butonu, listedeki klasörün adına tıklanınca artık seçili satırı kaldırıyor (yalnızca listeden; diskteki klasörler silinmez).
+  - `📂 Mevcut Projeyi Yükle` ile açılan projede bulunan standart klasörler *"projede var"* olarak işaretlenir; standart listede olmayan, elle açılmış klasörler *"yalnız bu projede"* olarak listede gösterilir (standart listeye kaydedilmez).
+  - Şablon kopyalamada şablon klasörünün kendisi artık proje içine boş klasör olarak kopyalanmıyor; içine dosya kopyalanmayan şablon alt klasörleri de oluşturulmuyor.
+- **📋 Proje Künye Bilgileri:**
+  - Form ilk açılışta boş gelir (önceden bazı alanlarda varsayılan değerler vardı); deprem yönetmeliği varsayılan olarak **TBDY 2018** seçilidir.
+  - `🧹 Formu Temizle` tüm veri girişlerini boşaltır (yönetmelik TBDY 2018'e döner).
+  - Tüm seçmeli alanların en üstünde boş satır bulunur; boş bırakılan alan künyede boş kalır.
+  - **BYS** 1–8 arası seçmeli menü oldu; **DTS** listesine 3a ve 4a eklendi (TBDY Tablo 3.2).
+  - TBDY 2018'de **I (Bina Önem Katsayısı)** BKS seçimine göre otomatik gelir (BKS=1 → 1.5, BKS=2 → 1.2, BKS=3 → 1.0); DBYBHY 2007'de I, 1.5 / 1.4 / 1.2 / 1.0 değerlerinden seçilir.
+  - Deprem parametreleri ve kat sayısı alanlarına yalnızca rakam (ve ondalık ayraç) girilebilir; yapıştırılan metin de süzülür.
+  - Döşeme tipleri: Kirişli, Kirişsiz (Mantar), Tek Yönlü Dişli (Asmolen), Çift Yönlü Dişli (Kaset), Kompozit (Çelik), Karma. Eski adlarla kaydedilmiş künyeler yeni adlarla açılır.
+  - Metraj bölümüne fihrist için **Yapı Alanı (m²)** alanı eklendi (`yapi_alani_m2`).
+- **🖥️ Pencere ve Kararlılık:**
+  - Ana pencere varsayılan olarak %20 daha büyük (1368 × 1212) açılır; ekrana sığmazsa küçültülür. Son pencere boyutu ve tam ekran durumu hatırlanır.
+  - Beklenmeyen hatalar programı kapatmadan kullanıcıya gösterilir ve `SDTools_hata_logu.txt` dosyasına yazılır.
+  - Hakkında ve Kurulum Sihirbazı ekranlarındaki sürüm bilgisi güncel sürümden otomatik alınır.
+
+---
+
+## 📁 Sürüm 2.9 (3 Kasım 2026)
 
 - **📁 Yeni Proje Kurulum ve Künye Yöneticisi (3. Sekme):**
   - Proje kodu ve adı girilerek `<KOD>-<AD>` biçiminde proje klasörü ve standart alt klasör ağacı (`CAD (ARC, WORK, STR)`, `ETABS`, `Excel`, `Görsel`, `ideCAD`, `Rapor (Zemin, Statik)`, `SAFE`, `SAP2000`, `Toplantı Notları`) tek tıkla oluşturulur. Liste `config.json`'da saklanır; klasör eklenip çıkarılabilir.
