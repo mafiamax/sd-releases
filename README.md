@@ -1,4 +1,4 @@
-# 🏗️ SD Proje Araçları (SD Tools) v2.8.1
+# 🏗️ SD Proje Araçları (SD Tools) v2.9
 
 Statik Dizayn Mühendislik için özel olarak geliştirilmiş **SD Proje Araçları (SD Tools)**; ETABS, SAP2000, SAFE, ideCAD, STA4CAD ve Revit gibi yapısal analiz/BIM yazılımları ile mimari/CAD projelerinin bakımını, temizliğini ve yedeklenmesini tek merkezden yöneten **hepsi-bir-arada (All-in-One)** mühendislik çalışma süitidir.
 
@@ -8,7 +8,7 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ---
 
-## 📦 Kurulum ve Dağıtım (v2.8.1)
+## 📦 Kurulum ve Dağıtım (v2.9)
 
 - **🚀 Kurulum Sihirbazı (`SDTools_Setup.exe` - Önerilen):**
   Tek dosyalık **`SDTools_Setup.exe`** kurulum paketini çalıştırarak yazılımı bilgisayarınıza (`%LocalAppData%\Programs\SDTools` veya `C:\Program Files\SDTools` altına) kurabilirsiniz. Kurulum sihirbazı:
@@ -46,10 +46,15 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
    - Tarih ve dosya boyutu (MB) filtreleme desteği.
    - Her işlem sonunda hedef klasörde tarihçeli detaylı denetim raporu (`_yedekleme_logu_*.txt`) üretir.
 
-3. **🛡️ Sistem Klasörü ve Sembolik Bağ Koruması:**
+3. **📁 Yeni Proje Kurulum Modülü:**
+   - Proje kodu + adıyla (`SD298-FUZUL PENDİK`) proje klasörünü ve `config.json`'da tanımlı standart alt klasör ağacını tek tıkla oluşturur; isteğe bağlı şablon dosyalarını üzerine yazmadan kopyalar.
+   - Proje ana dizini ve **arşiv klasörleri** (bitmiş projelerin taşındığı yerler; her bilgisayarda ayrı seçilir) taranarak sıradaki boş proje kodu önerilir.
+   - TBDY 2018 / DBYBHY 2007 künye formuyla proje klasörüne `proje_bilgi.json` yazar; künye yedeklemeye otomatik dahil edilir.
+
+4. **🛡️ Sistem Klasörü ve Sembolik Bağ Koruması:**
    - `C:\`, `C:\Windows`, `Program Files`, `$RECYCLE.BIN` gibi işletim sistemi dizinlerinin kazara taranmasını/temizlenmesini engeller ve sembolik bağlardan (ReparsePoint / Junction) kaynaklı sonsuz döngüleri önler.
 
-4. **☀️ Canlı Açık / Koyu Tema, Online Lisanslama, Güncelleme & Sürüm Notları:**
+5. **☀️ Canlı Açık / Koyu Tema, Online Lisanslama, Güncelleme & Sürüm Notları:**
    - Sağ üstteki toggle butonu ile tek tıkla canlı olarak tema değiştirilebilir.
    - **🔑 Online Lisans ve Cihaz Koruması:** Google Firebase tabanlı çevrimiçi lisans doğrulama, donanım kimliği (`HWID`) eşleştirmesi ve 3 gün (72 saat) çevrimdışı çalışma toleransı içerir.
    - **Hakkında -> `🔄 Güncelleme Kontrolü`**, **`🔑 Lisans`** ve **`📋 Sürüm Notları`** pencereleri ile uygulama içinden sürüm geçmişi incelenebilir, lisans ve sağ tık menüsü yönetilebilir ve yeni sürümler tek tıkla yüklenebilir.
@@ -81,7 +86,7 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ---
 
-## 🛡️ Korunan Dosya Uzantıları ve Kategoriler (v2.8.1)
+## 🛡️ Korunan Dosya Uzantıları ve Kategoriler (v2.9)
 
 | Kategori | Uzantılar | Varsayılan Durum |
 | :--- | :--- | :--- |
@@ -110,4 +115,4 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ---
 
-*Geliştirici: Statik Dizayn Mühendislik • Web: https://statikdizayn.com • Sürüm: v2.8.1 • Powered by Google Gemini*
+*Geliştirici: Statik Dizayn Mühendislik • Web: https://statikdizayn.com • Sürüm: v2.9 • Powered by Google Gemini & Anthropic Claude*

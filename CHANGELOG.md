@@ -4,7 +4,22 @@ Bu sayfada **SD Proje Araçları (SD Tools)** yazılımının sürümlerinde yap
 
 ---
 
-## 🛡️ Sürüm 2.8.1 (29 Ekim 2026) - *Güncel Sürüm*
+## 📁 Sürüm 2.9 (3 Kasım 2026) - *Güncel Sürüm*
+
+- **📁 Yeni Proje Kurulum ve Künye Yöneticisi (3. Sekme):**
+  - Proje kodu ve adı girilerek `<KOD>-<AD>` biçiminde proje klasörü ve standart alt klasör ağacı (`CAD (ARC, WORK, STR)`, `ETABS`, `Excel`, `Görsel`, `ideCAD`, `Rapor (Zemin, Statik)`, `SAFE`, `SAP2000`, `Toplantı Notları`) tek tıkla oluşturulur. Liste `config.json`'da saklanır; klasör eklenip çıkarılabilir.
+  - Türkçe büyük harf (`tr-TR`) dönüşümü, yasak karakter temizliği ve aynı kod/klasör çakışma uyarıları.
+  - İsteğe bağlı standart şablon dosyaları, mevcut dosyaların üzerine yazılmadan kopyalanır.
+  - TBDY 2018 / DBYBHY 2007'ye göre değişen künye formu ile `proje_bilgi.json` üretilir ve güncellenir; önceki künye her güncellemede `proje_bilgi.json.bak` olarak saklanır. Sayısal alanlarda okunamayan veya olağan dışı değerler kaydetmeden önce gösterilir.
+- **🗄️ Arşiv Klasörleri ile Sıradaki Kod Önerisi:**
+  - Bitmiş projelerin taşındığı arşiv klasörleri (her bilgisayarda ayrı seçilir, ağ yolları desteklenir) de taranarak sıradaki boş proje kodu önerilir; arşivde aynı kod varsa proje oluşturulmadan önce uyarılır.
+  - Tarama arka planda yapılır; erişilemeyen sürücü programı bekletmez, uyarı olarak gösterilir.
+- **💾 Yedekleme:** `proje_bilgi.json` her yedeklemeye otomatik dahil edilir; bitiş özetinde ve raporda kopyalanan toplam boyut (MB/GB) gösterilir.
+- **🖥️ Arayüz:** Sekme başlığındaki mavi çerçevenin fare hareketinde yanıp sönmesi giderildi; masaüstü/Başlat Menüsü kısayol açıklamaları güncel sürümle eşitlenir.
+
+---
+
+## 🛡️ Sürüm 2.8.1 (29 Ekim 2026)
 
 - **⚡ Gecikmesiz Hızlı Açılış (0 ms) & Kararlı Donanım Kimliği (HWID):**
   - Son 6 saat içinde doğrulanmış lisanslarda uygulama (ve Windows Gezgini sağ tık menüsü kısayolları) **0 ms gecikmeyle anında açılır**; lisans senkronizasyonu pencere açıldıktan sonra arka planda sessizce gerçekleştirilir.
