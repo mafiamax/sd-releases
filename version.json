@@ -1,10 +1,10 @@
 {
-  "version": "2.9.1",
-  "display_version": "v2.9.1",
-  "release_date": "3 Kasım 2026",
+  "version": "3.0.0",
+  "display_version": "v3.0",
+  "release_date": "20 Kasım 2026",
   "download_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools.exe",
   "setup_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools_Setup.exe",
-  "sha256": "373e550fc0c0e6dd569d30f590d79d59d2dae9bb93db090271922717f2cee6fe",
+  "sha256": "7eedd566697e4323e11ca8b1926100e46072047e31a689e1980055b9560522ec",
   "changelog_url": "https://github.com/mafiamax/sd-releases/blob/main/CHANGELOG.md",
-  "notes": "• Yeni Proje Kurulum: 'Seçileni Sil' düzeltildi; mevcut proje yüklenince projedeki klasörler listede gösterilir; şablon klasörü artık boş olarak projeye kopyalanmaz.\n• Künye formu boş açılır, 'Formu Temizle' tüm alanları boşaltır; yeni döşeme tipleri ve Yapı Alanı (m²) alanı eklendi.\n• Pencere varsayılan olarak %20 daha büyük açılır (ekrana sığacak şekilde) ve son boyut hatırlanır; beklenmeyen hatalar programı kapatmadan günlüğe yazılır."
+  "notes": "• Yeni 'Proje Fihristi' sekmesi: ana dizin ve arşivdeki tüm projeler künyelerinden listelenir; arama, 10 filtre (rol, müşteri, yapı türü, durum, döşeme, yönetmelik, il, zemin, taşıyıcı sistem, yıl), blok ayrıntıları ve Excel'e aktarma.\n• Künye formuna Rol, Durum, Başlangıç tarihi, Müşteri, Mimar, Yapı türü ve Taşıyıcı sistem alanları eklendi; il/ilçe/mahalle yalnızca baş harfleri büyük yazılır.\n• 'Künyeyi Güncelle' formda olmayan bilgileri (blok listesi vb.) artık silmez; fihristten açılan arşiv projelerine yalnızca künye yazılır."
 }

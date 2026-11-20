@@ -1,4 +1,4 @@
-# 🏗️ SD Proje Araçları (SD Tools) v2.9.1
+# 🏗️ SD Proje Araçları (SD Tools) v3.0
 
 Statik Dizayn Mühendislik için özel olarak geliştirilmiş **SD Proje Araçları (SD Tools)**; ETABS, SAP2000, SAFE, ideCAD, STA4CAD ve Revit gibi yapısal analiz/BIM yazılımları ile mimari/CAD projelerinin bakımını, temizliğini ve yedeklenmesini tek merkezden yöneten **hepsi-bir-arada (All-in-One)** mühendislik çalışma süitidir.
 
@@ -8,7 +8,7 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ---
 
-## 📦 Kurulum ve Dağıtım (v2.9.1)
+## 📦 Kurulum ve Dağıtım (v3.0)
 
 - **🚀 Kurulum Sihirbazı (`SDTools_Setup.exe` - Önerilen):**
   Tek dosyalık **`SDTools_Setup.exe`** kurulum paketini çalıştırarak yazılımı bilgisayarınıza (`%LocalAppData%\Programs\SDTools` veya `C:\Program Files\SDTools` altına) kurabilirsiniz. Kurulum sihirbazı:
@@ -50,11 +50,16 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
    - Proje kodu + adıyla (`SD298-FUZUL PENDİK`) proje klasörünü ve `config.json`'da tanımlı standart alt klasör ağacını tek tıkla oluşturur; isteğe bağlı şablon dosyalarını üzerine yazmadan kopyalar.
    - Proje ana dizini ve **arşiv klasörleri** (bitmiş projelerin taşındığı yerler; her bilgisayarda ayrı seçilir) taranarak sıradaki boş proje kodu önerilir.
    - TBDY 2018 / DBYBHY 2007 künye formuyla proje klasörüne `proje_bilgi.json` yazar; künye yedeklemeye otomatik dahil edilir.
+   - Künyede rol (Müellif / Taşeron / Revizyon / Kontrol-Rapor), müşteri, mimar, başlangıç tarihi, durum, yapı türü ve taşıyıcı sistem de tutulur; `💾 Künyeyi Güncelle` formda olmayan bilgileri (blok listesi vb.) silmez.
 
-4. **🛡️ Sistem Klasörü ve Sembolik Bağ Koruması:**
+4. **📚 Proje Fihristi Modülü:**
+   - Proje ana dizini ve arşiv klasörlerindeki tüm projeleri `proje_bilgi.json` künyelerinden tek listede gösterir; Türkçe karakter duyarsız arama ve 10 filtre (rol, müşteri, yapı türü, durum, döşeme, yönetmelik, il, zemin sınıfı, taşıyıcı sistem, başlangıç yılı) ile daraltılır.
+   - Seçilen projenin konum, deprem, zemin, malzeme ve blok bilgileri ayrıntı panelinde görünür; `✏️ Künyeyi Düzenle` projeyi künye formuna yükler, `📊 Excel'e Aktar` listelenen projeleri `.xlsx` dosyasına yazar.
+
+5. **🛡️ Sistem Klasörü ve Sembolik Bağ Koruması:**
    - `C:\`, `C:\Windows`, `Program Files`, `$RECYCLE.BIN` gibi işletim sistemi dizinlerinin kazara taranmasını/temizlenmesini engeller ve sembolik bağlardan (ReparsePoint / Junction) kaynaklı sonsuz döngüleri önler.
 
-5. **☀️ Canlı Açık / Koyu Tema, Online Lisanslama, Güncelleme & Sürüm Notları:**
+6. **☀️ Canlı Açık / Koyu Tema, Online Lisanslama, Güncelleme & Sürüm Notları:**
    - Sağ üstteki toggle butonu ile tek tıkla canlı olarak tema değiştirilebilir.
    - **🔑 Online Lisans ve Cihaz Koruması:** Google Firebase tabanlı çevrimiçi lisans doğrulama, donanım kimliği (`HWID`) eşleştirmesi ve 3 gün (72 saat) çevrimdışı çalışma toleransı içerir.
    - **Hakkında -> `🔄 Güncelleme Kontrolü`**, **`🔑 Lisans`** ve **`📋 Sürüm Notları`** pencereleri ile uygulama içinden sürüm geçmişi incelenebilir, lisans ve sağ tık menüsü yönetilebilir ve yeni sürümler tek tıkla yüklenebilir.
@@ -86,7 +91,7 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ---
 
-## 🛡️ Korunan Dosya Uzantıları ve Kategoriler (v2.9.1)
+## 🛡️ Korunan Dosya Uzantıları ve Kategoriler (v3.0)
 
 | Kategori | Uzantılar | Varsayılan Durum |
 | :--- | :--- | :--- |
@@ -115,4 +120,4 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ---
 
-*Geliştirici: Statik Dizayn Mühendislik • Web: https://statikdizayn.com • Sürüm: v2.9.1 • Powered by Google Gemini & Anthropic Claude*
+*Geliştirici: Statik Dizayn Mühendislik • Web: https://statikdizayn.com • Sürüm: v3.0 • Powered by Google Gemini & Anthropic Claude*

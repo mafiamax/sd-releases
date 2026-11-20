@@ -4,7 +4,25 @@ Bu sayfada **SD Proje Araçları (SD Tools)** yazılımının sürümlerinde yap
 
 ---
 
-## 🔧 Sürüm 2.9.1 (3 Kasım 2026) - *Güncel Sürüm*
+## 📚 Sürüm 3.0 (20 Kasım 2026) - *Güncel Sürüm*
+
+- **📚 Proje Fihristi (4. Sekme):**
+  - Projeler Ana Dizini ve Arşiv Klasörleri'ndeki tüm SD kodlu proje klasörleri, `proje_bilgi.json` künyelerinden okunarak tek listede gösterilir (yıl/kategori gibi ara klasörlerin bir alt seviyesi de taranır). Tarama arka planda yapılır; erişilemeyen sürücüler uyarı olarak gösterilir.
+  - Tek kutudan arama: kod, proje adı, müşteri, mimar, il, ilçe, mahalle ve kullanım amacı; Türkçe karakter ve büyük/küçük harf farkı gözetilmez (`cekmekoy` = Çekmeköy).
+  - Filtreler: Rol, Müşteri, Yapı türü, Durum, Döşeme, Yönetmelik, İl, Zemin sınıfı, Taşıyıcı sistem, Başlangıç yılı. Her seçenekte proje sayısı görünür; `(boş)` seçeneği bilgisi eksik künyeleri bulur. Etkin filtreler etiket olarak gösterilir, tek tıkla kaldırılır.
+  - Çok bloklu projelerde blokta farklı olan bilgiler (kat, döşeme, beton...) bloklardan toplanır; ayrıntı panelinde blok tablosu ve kaynak çizim yolu gösterilir.
+  - Künyesi olmayan proje klasörleri soluk listelenir. `📂 Klasörü Aç` ve `✏️ Künyeyi Düzenle` (projeyi künye formuna yükler) düğmeleri; kayıttan sonra fihriste dönüldüğünde liste kendiliğinden yenilenir.
+  - `📊 Excel'e Aktar`: o an listelenen projeler ek kütüphane gerektirmeden `.xlsx` dosyasına yazılır (kalın başlık, dondurulmuş ilk satır, otomatik filtre).
+- **📋 Proje Künye Bilgileri:**
+  - Yeni **Proje Bilgileri** bölümü: Rol (Müellif / Taşeron / Revizyon / Kontrol-Rapor), Durum (Devam ediyor / Tamamlandı / Yarım kaldı - İptal), Başlangıç tarihi (GG.AA.YYYY), Müşteri, Mimar. Yapı bölümüne Yapı türü ve Taşıyıcı sistem (Betonarme / Çelik / Güçlendirme / Betonarme + Çelik) eklendi.
+  - Yeni projede Rol *Müellif*, Durum *Devam ediyor*, Yapı türü *Betonarme* ve Başlangıç *bugün* olarak önerilir; değiştirilebilir.
+  - İl, ilçe ve mahalle artık yalnızca baş harfleri büyük yazılır (*İstanbul / Kadıköy*); proje adı ve kodlar olduğu gibi kalır.
+  - Künye şema sürümü 2 oldu. `💾 Künyeyi Güncelle` formda olmayan bilgileri (blok listesi, kaynak ve arşiv notları vb.) artık silmez, eski künyeden aynen taşır; formda seçilemeyen yönetmelikler (ör. EUROCODE) TBDY 2018 ile ezilmez.
+  - Fihristten açılan arşiv projelerinde künye projenin kendi klasörüne yazılır; Projeler Ana Dizini ayarı değişmez ve biten projeye boş alt klasör eklenmez.
+
+---
+
+## 🔧 Sürüm 2.9.1 (3 Kasım 2026)
 
 - **📁 Yeni Proje Kurulum – Alt Klasör Ağacı:**
   - `🗑️ Seçileni Sil` butonu, listedeki klasörün adına tıklanınca artık seçili satırı kaldırıyor (yalnızca listeden; diskteki klasörler silinmez).
