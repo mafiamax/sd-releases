@@ -1,4 +1,4 @@
-# 🏗️ SD Proje Araçları (SD Tools) v3.0
+# 🏗️ SD Proje Araçları (SD Tools) v3.0.1
 
 Statik Dizayn Mühendislik için özel olarak geliştirilmiş **SD Proje Araçları (SD Tools)**; ETABS, SAP2000, SAFE, ideCAD, STA4CAD ve Revit gibi yapısal analiz/BIM yazılımları ile mimari/CAD projelerinin bakımını, temizliğini ve yedeklenmesini tek merkezden yöneten **hepsi-bir-arada (All-in-One)** mühendislik çalışma süitidir.
 
@@ -8,7 +8,7 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ---
 
-## 📦 Kurulum ve Dağıtım (v3.0)
+## 📦 Kurulum ve Dağıtım (v3.0.1)
 
 - **🚀 Kurulum Sihirbazı (`SDTools_Setup.exe` - Önerilen):**
   Tek dosyalık **`SDTools_Setup.exe`** kurulum paketini çalıştırarak yazılımı bilgisayarınıza (`%LocalAppData%\Programs\SDTools` veya `C:\Program Files\SDTools` altına) kurabilirsiniz. Kurulum sihirbazı:
@@ -55,6 +55,7 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 4. **📚 Proje Fihristi Modülü:**
    - Proje ana dizini ve arşiv klasörlerindeki tüm projeleri `proje_bilgi.json` künyelerinden tek listede gösterir; Türkçe karakter duyarsız arama ve 10 filtre (rol, müşteri, yapı türü, durum, döşeme, yönetmelik, il, zemin sınıfı, taşıyıcı sistem, başlangıç yılı) ile daraltılır.
    - Seçilen projenin konum, deprem, zemin, malzeme ve blok bilgileri ayrıntı panelinde görünür; `✏️ Künyeyi Düzenle` projeyi künye formuna yükler, `📊 Excel'e Aktar` listelenen projeleri `.xlsx` dosyasına yazar.
+   - **Bilgisayarlar arası künye taşıma:** `📦 Künye Paketi Ver` listelenen projelerin künyelerini tek bir `.zip` paketine koyar; diğer bilgisayarda `📥 Künye Paketi Al` paketi **SD koduna göre** yerel proje klasörleriyle eşleştirir. Önizlemede eklenecek / aynı / farklı / atlanacak künyeler listelenir; var olan künyenin üzerine yalnızca açıkça istenirse yazılır (eskisi `.bak` olarak saklanır) ve paketin yanına içe aktarma raporu yazılır.
 
 5. **🛡️ Sistem Klasörü ve Sembolik Bağ Koruması:**
    - `C:\`, `C:\Windows`, `Program Files`, `$RECYCLE.BIN` gibi işletim sistemi dizinlerinin kazara taranmasını/temizlenmesini engeller ve sembolik bağlardan (ReparsePoint / Junction) kaynaklı sonsuz döngüleri önler.
@@ -91,7 +92,7 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ---
 
-## 🛡️ Korunan Dosya Uzantıları ve Kategoriler (v3.0)
+## 🛡️ Korunan Dosya Uzantıları ve Kategoriler (v3.0.1)
 
 | Kategori | Uzantılar | Varsayılan Durum |
 | :--- | :--- | :--- |
@@ -120,4 +121,4 @@ Gelecekte eklenecek yeni modüllere ve sekmelere (pafta düzenleme, metraj, mode
 
 ---
 
-*Geliştirici: Statik Dizayn Mühendislik • Web: https://statikdizayn.com • Sürüm: v3.0 • Powered by Google Gemini & Anthropic Claude*
+*Geliştirici: Statik Dizayn Mühendislik • Web: https://statikdizayn.com • Sürüm: v3.0.1 • Powered by Google Gemini & Anthropic Claude*

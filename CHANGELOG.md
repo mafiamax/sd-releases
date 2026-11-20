@@ -4,7 +4,16 @@ Bu sayfada **SD Proje Araçları (SD Tools)** yazılımının sürümlerinde yap
 
 ---
 
-## 📚 Sürüm 3.0 (20 Kasım 2026) - *Güncel Sürüm*
+## 📦 Sürüm 3.0.1 (20 Kasım 2026) - *Güncel Sürüm*
+
+- **📦 Künye Paketi Ver / 📥 Künye Paketi Al (Proje Fihristi):**
+  - Proje klasörleri birden fazla bilgisayarda ayrı ayrı tutulduğunda künyeleri (`proje_bilgi.json`) taşımak için. `📦 Künye Paketi Ver`, fihristte o an listelenen projelerin künyelerini tek bir `.zip` paketine koyar (filtre yoksa hepsi).
+  - `📥 Künye Paketi Al`, paketteki künyeleri klasör adına değil **SD koduna göre** bu bilgisayardaki proje klasörleriyle eşleştirir ve önce önizleme gösterir: *Eklenecek* (künyesi olmayan proje), *Aynı* (dokunulmaz), *Farklı* (hangisinin daha yeni olduğu yazılır), *Proje yok / Belirsiz / Okunamadı* (atlanır).
+  - Var olan künyenin üzerine yalnızca önizlemedeki kutu işaretlenirse yazılır; eski künye `proje_bilgi.json.bak` olarak saklanır. Paketteki her künye SHA-256 ile doğrulanır; işlem sonunda paketin yanına içe aktarma raporu yazılır ve liste yenilenir.
+
+---
+
+## 📚 Sürüm 3.0 (20 Kasım 2026)
 
 - **📚 Proje Fihristi (4. Sekme):**
   - Projeler Ana Dizini ve Arşiv Klasörleri'ndeki tüm SD kodlu proje klasörleri, `proje_bilgi.json` künyelerinden okunarak tek listede gösterilir (yıl/kategori gibi ara klasörlerin bir alt seviyesi de taranır). Tarama arka planda yapılır; erişilemeyen sürücüler uyarı olarak gösterilir.

@@ -1,10 +1,10 @@
 {
-  "version": "3.0.0",
-  "display_version": "v3.0",
+  "version": "3.0.1",
+  "display_version": "v3.0.1",
   "release_date": "20 Kasım 2026",
   "download_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools.exe",
   "setup_url": "https://raw.githubusercontent.com/mafiamax/sd-releases/main/SDTools_Setup.exe",
-  "sha256": "7eedd566697e4323e11ca8b1926100e46072047e31a689e1980055b9560522ec",
+  "sha256": "ff9f1a994e619f532a373fb23f2768d7d72cf048d339b77e70681e1553fb8360",
   "changelog_url": "https://github.com/mafiamax/sd-releases/blob/main/CHANGELOG.md",
-  "notes": "• Yeni 'Proje Fihristi' sekmesi: ana dizin ve arşivdeki tüm projeler künyelerinden listelenir; arama, 10 filtre (rol, müşteri, yapı türü, durum, döşeme, yönetmelik, il, zemin, taşıyıcı sistem, yıl), blok ayrıntıları ve Excel'e aktarma.\n• Künye formuna Rol, Durum, Başlangıç tarihi, Müşteri, Mimar, Yapı türü ve Taşıyıcı sistem alanları eklendi; il/ilçe/mahalle yalnızca baş harfleri büyük yazılır.\n• 'Künyeyi Güncelle' formda olmayan bilgileri (blok listesi vb.) artık silmez; fihristten açılan arşiv projelerine yalnızca künye yazılır."
+  "notes": "• Proje Fihristi'ne 'Künye Paketi Ver / Al' eklendi: künyeler tek .zip paketiyle başka bilgisayara taşınır, SD koduna göre eşleştirilir; var olan künyenin üzerine yalnızca açıkça istenirse yazılır (eskisi .bak olarak saklanır).\n• Yeni 'Proje Fihristi' sekmesi: ana dizin ve arşivdeki tüm projeler künyelerinden listelenir; arama, 10 filtre (rol, müşteri, yapı türü, durum, döşeme, yönetmelik, il, zemin, taşıyıcı sistem, yıl), blok ayrıntıları ve Excel'e aktarma.\n• Künye formuna Rol, Durum, Başlangıç tarihi, Müşteri, Mimar, Yapı türü ve Taşıyıcı sistem alanları eklendi; il/ilçe/mahalle yalnızca baş harfleri büyük yazılır.\n• 'Künyeyi Güncelle' formda olmayan bilgileri (blok listesi vb.) artık silmez; fihristten açılan arşiv projelerine yalnızca künye yazılır."
 }
