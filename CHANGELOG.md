@@ -4,7 +4,14 @@ Bu sayfada **SD Proje Araçları (SD Tools)** yazılımının sürümlerinde yap
 
 ---
 
-## 📦 Sürüm 3.0.1 (20 Kasım 2026) - *Güncel Sürüm*
+## 🔁 Sürüm 3.0.2 (24 Kasım 2026) - *Güncel Sürüm*
+
+- **🔁 Depo adları değişti:** Dağıtım deposu `SDTools-releases`, kaynak kod deposu `SDTools` oldu. Güncelleme kontrolü, indirme adresi kilidi ve sürüm notları bağlantısı yeni adrese taşındı.
+- **⚠️ Önemli:** v3.0.1 ve öncesi kurulu sürümler yeni depoyu tanımadığı için bu sürüme **bir kereliğine elle** geçilmelidir: `SDTools_Setup.exe` çalıştırılarak mevcut kurulumun üzerine kurulur (ayarlar ve lisans korunur). Sonraki sürümler yine otomatik güncellenir.
+
+---
+
+## 📦 Sürüm 3.0.1 (20 Kasım 2026)
 
 - **📦 Künye Paketi Ver / 📥 Künye Paketi Al (Proje Fihristi):**
   - Proje klasörleri birden fazla bilgisayarda ayrı ayrı tutulduğunda künyeleri (`proje_bilgi.json`) taşımak için. `📦 Künye Paketi Ver`, fihristte o an listelenen projelerin künyelerini tek bir `.zip` paketine koyar (filtre yoksa hepsi).
