@@ -1,10 +1,10 @@
 {
-  "version": "3.0.2",
-  "display_version": "v3.0.2",
-  "release_date": "24 Kasım 2026",
+  "version": "3.0.3",
+  "display_version": "v3.0.3",
+  "release_date": "27 Kasım 2026",
   "download_url": "https://raw.githubusercontent.com/mafiamax/SDTools-releases/main/SDTools.exe",
   "setup_url": "https://raw.githubusercontent.com/mafiamax/SDTools-releases/main/SDTools_Setup.exe",
-  "sha256": "06b664176134a89e9c245a37b726752a8cc9be60a5216fbbaf116db652f8af55",
+  "sha256": "d3b4fbb02b90d3c31a3acbda39b22f933b46b473ccaf9c712edfe3ff0ba41e5f",
   "changelog_url": "https://github.com/mafiamax/SDTools-releases/blob/main/CHANGELOG.md",
-  "notes": "• Depo adları değişti: güncellemeler artık SDTools-releases deposundan alınır.\n• Proje Fihristi'ne 'Künye Paketi Ver / Al' eklendi: künyeler tek .zip paketiyle başka bilgisayara taşınır, SD koduna göre eşleştirilir; var olan künyenin üzerine yalnızca açıkça istenirse yazılır (eskisi .bak olarak saklanır).\n• Yeni 'Proje Fihristi' sekmesi: ana dizin ve arşivdeki tüm projeler künyelerinden listelenir; arama, 10 filtre (rol, müşteri, yapı türü, durum, döşeme, yönetmelik, il, zemin, taşıyıcı sistem, yıl), blok ayrıntıları ve Excel'e aktarma.\n• Künye formuna Rol, Durum, Başlangıç tarihi, Müşteri, Mimar, Yapı türü ve Taşıyıcı sistem alanları eklendi; il/ilçe/mahalle yalnızca baş harfleri büyük yazılır.\n• 'Künyeyi Güncelle' formda olmayan bilgileri (blok listesi vb.) artık silmez; fihristten açılan arşiv projelerine yalnızca künye yazılır."
+  "notes": "• Yedekleme: 260 karakteri aşan uzun dosya yolları artık kopyalanıyor; tek bir sorunlu dosya yedeklemenin tamamını durdurmuyor, rapora hata olarak yazılıp devam ediliyor.\n• Depo adları değişti: güncellemeler artık SDTools-releases deposundan alınır.\n• Proje Fihristi'ne 'Künye Paketi Ver / Al' eklendi: künyeler tek .zip paketiyle başka bilgisayara taşınır, SD koduna göre eşleştirilir; var olan künyenin üzerine yalnızca açıkça istenirse yazılır (eskisi .bak olarak saklanır).\n• Yeni 'Proje Fihristi' sekmesi: ana dizin ve arşivdeki tüm projeler künyelerinden listelenir; arama, 10 filtre (rol, müşteri, yapı türü, durum, döşeme, yönetmelik, il, zemin, taşıyıcı sistem, yıl), blok ayrıntıları ve Excel'e aktarma.\n• Künye formuna Rol, Durum, Başlangıç tarihi, Müşteri, Mimar, Yapı türü ve Taşıyıcı sistem alanları eklendi; il/ilçe/mahalle yalnızca baş harfleri büyük yazılır.\n• 'Künyeyi Güncelle' formda olmayan bilgileri (blok listesi vb.) artık silmez; fihristten açılan arşiv projelerine yalnızca künye yazılır."
 }
